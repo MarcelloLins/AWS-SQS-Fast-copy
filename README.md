@@ -19,6 +19,7 @@ Some arguments are mandatory, while others are not but have default values set t
 ### Example of Use
 
 ```sh
+// AWS Keys and Queue Names on app.Config
 $ SQS_Mover.exe -Threads 5
 ```
 
