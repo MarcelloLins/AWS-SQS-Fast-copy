@@ -16,7 +16,13 @@ Configuration is done via both app.config and CLI arguments.
 
 Some arguments are mandatory, while others are not but have default values set to them, internally.
 
-## List of Parameters
+### Example of Use
+
+```sh
+$ SQS_Mover.exe -Threads 5
+```
+
+## List of Parameters (Must be passed either via CLI or on app.config)
 
 ### AWS SQS Parameters
 
@@ -28,7 +34,7 @@ Some arguments are mandatory, while others are not but have default values set t
 
 * TargetQueue - Mandatory - Don't have default value - Name of the "Target" queue
 
-### Timed Queue Configuration
+###  Log Configuration
 
 * LogThreshold - Optional - Defaults to 10000 - Log will show progress after each X records processed. E.G: If set to 10000, after 10000 records queued into the target queue, it will log the progress
 
